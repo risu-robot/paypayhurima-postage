@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>Pay送料</title>
+  </head>
+  <body>
+    <h1>PayPayフリマ送料 最安値</h1>
+    <p>商品のサイズと質量を入力してください</p>
+    <label for="how">発送方法</label>
+    <select style="height: 25px;" id="how">
+      <option value="0">すべての発送方法</option>
+      <option value="1">おてがる配送(ヤマト運輸)</option>
+      <option value="2">おてがる配送(日本郵便)</option>
+      <option value="3">おまかせ配送</option>
+    </select>
+    <form>
+      <p>X (cm) <input style="height: 20px" type="number" id="x-message"></p>
+      <p>Y (cm) <input style="height: 20px" type="number" id="y-message"></p>
+      <p>Z (cm) <input style="height: 20px" type="number" id="z-message"></p>
+      <p>質量 (g) <input style="height: 20px" type="number" id="mass-message"></p>
+      <input class="button" type="reset" onclick="displayReset()" value="リセット">
+      <input class="button" type="button" onclick="result()" value="結果を表示">
+    </form>
+    <div class="img">
+      <img src="image/yamato.png" id="yamato">
+      <img src="image/yuubinn.png" id="yuubinn">
+    </div>
+    <h2 id="output-message"></h2>
+    <p id="sub-message"></p>
+    <h3>2022年9月 現在の価格です</h3>
+    <div class="detail">
+      <a href="https://s.yimg.jp/images/paypayfleamarket/help/deliverytypeslist_v2.pdf?pfmOpenWebview=external" target="_blank"><h3>詳細はこちらで確認してください</h3></a>
+    </div>
+    <br>
+    <div class="update">
+      <a href="https://message.blogcms.jp/livedoor/risu_robot/message" target="_blank"><p>※ 価格変更などがあった場合はこちらで教えてください</p></a>
+    </div>
+    <br>
+    <div class="program">
+      <a href="" target="_blank"><p>プログラムはこちら</p></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
