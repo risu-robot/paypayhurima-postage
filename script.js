@@ -2,6 +2,18 @@ document.getElementById("yamato").style.display = "none";
 document.getElementById("yuubinn").style.display = "none";
 
 function displayReset() {
+  const x_css = document.getElementById('x-message');
+  const y_css = document.getElementById('y-message');
+  const z_css = document.getElementById('z-message');
+  const mass_css = document.getElementById('mass-message');
+  x_css.style.background = "white";
+  x_css.style.borderColor = "gray";
+  y_css.style.background = "white";
+  y_css.style.borderColor = "gray";
+  z_css.style.background = "white";
+  z_css.style.borderColor = "gray";
+  mass_css.style.background = "white";
+  mass_css.style.borderColor = "gray";
   document.getElementById("yamato").style.display = "none";
   document.getElementById("yuubinn").style.display = "none";
   const output = "";
@@ -11,6 +23,18 @@ function displayReset() {
 }
 
 function result() {
+  const x_css = document.getElementById('x-message');
+  const y_css = document.getElementById('y-message');
+  const z_css = document.getElementById('z-message');
+  const mass_css = document.getElementById('mass-message');
+  x_css.style.background = "white";
+  x_css.style.borderColor = "gray";
+  y_css.style.background = "white";
+  y_css.style.borderColor = "gray";
+  z_css.style.background = "white";
+  z_css.style.borderColor = "gray";
+  mass_css.style.background = "white";
+  mass_css.style.borderColor = "gray";
   document.getElementById("yamato").style.display = "none";
   document.getElementById("yuubinn").style.display = "none";
   let send = document.getElementById("how");
@@ -195,10 +219,31 @@ function result() {
       document.getElementById("sub-message").innerHTML = output2;
     }
   } else {
-    const output = "Error";
-    const output2 = "入力に誤りがあります";
-    document.getElementById("output-message").innerHTML = output;
-    document.getElementById("sub-message").innerHTML = output2;
+      const output = "Error";
+      const output2 = "入力に誤りがあります";
+      document.getElementById("output-message").innerHTML = output;
+      document.getElementById("sub-message").innerHTML = output2;
+
+    if (x <= 0) {
+      const x_css = document.getElementById('x-message');
+      x_css.style.background = "pink";
+      x_css.style.borderColor = "red";
+    }
+    if (y <= 0) {
+      const y_css = document.getElementById('y-message');
+      y_css.style.background = "pink";
+      y_css.style.borderColor = "red";
+    }
+    if (z <= 0) {
+      const z_css = document.getElementById('z-message');
+      z_css.style.background = "pink";
+      z_css.style.borderColor = "red";
+    }
+    if (mass <= 0) {
+      const mass_css = document.getElementById('mass-message');
+      mass_css.style.background = "pink";
+      mass_css.style.borderColor = "red";
+    }
   }
 }
 
